@@ -33,5 +33,5 @@ jobs:
         run: |
           docker push ${{ secrets.DOCKER_USER }}/87uyhb :${{ github.sha }}
           echo "Histórico guardado"
-          docker push ${{ secrets.DOCKER_USER }}/2dawcicd:latest
+          docker push ${{ secrets.DOCKER_USER }}/enana:latest
           echo "Última versión subida"
