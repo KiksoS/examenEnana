@@ -31,7 +31,7 @@ jobs:
           echo "Imagen generada de última versión"
       - name: Push
         run: |
-          docker push ${{ secrets.DOCKER_USER }}/87uyhb :${{ github.sha }}
+          docker push ${{ secrets.DOCKER_USER }}/enana :${{ github.sha }}
           echo "Histórico guardado"
           docker push ${{ secrets.DOCKER_USER }}/enana:latest
           echo "Última versión subida"
