@@ -50,7 +50,7 @@ class EnanaTest extends TestCase {
         $Francisca = new Enana("Francisca",-9);
         $Francisca->pocima();
         $this->assertEquals("viva", $Francisca->getSituacion());
-        $this->assertTrue($Pascualin->getPuntosVida() > 0);
+        $this->assertTrue($Francisca->getPuntosVida() > 0);
 
     }
 
