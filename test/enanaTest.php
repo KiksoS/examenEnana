@@ -66,6 +66,9 @@ class EnanaTest extends TestCase {
     public function testPocimaExtraLimbo() {
         #Se probará el efecto de administrar una pócima Extra a una Enana en el limbo.
         #Se tendrá que probar que la vida es 50 y la situación ha cambiado a viva.
+        $EmilioElMuerto = new Enana("EmilioElMuerto",0);
+        $this->assertEquals("viva", $EmilioElMuerto->getSituacion());
+        $this->assertEquals(50,$EmilioElMuerto->getPuntosVida());
 
     }
 }
